@@ -1,3 +1,9 @@
+// .eslintrc.json
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals"],
+  "rules": {
+    "no-console": "off",
+    "no-debugger": "off",
+    "react/prop-types": "off"
+  }
 }
