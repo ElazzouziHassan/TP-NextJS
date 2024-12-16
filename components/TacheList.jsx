@@ -24,19 +24,19 @@ export default async function TachesList() {
 
   return (
     <>
-      {taches.map((t) => (
+      {taches.map((tache) => (
         <div
-          key={t._id}
+          key={tache._id}
           className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start"
         >
           <div>
-            <h2 className="font-bold text-2xl">{t.titre}</h2>
-            <div>{t.description}</div>
+            <h2 className="font-bold text-2xl">{tache.titre}</h2>
+            <div>{tache.description}</div>
           </div>
 
           <div className="flex gap-2">
-            <SupprimerBtn id={t._id} />
-            <Link href={`/modifier-tache/${t._id}`}>
+            <SupprimerBtn id={tache._id} />
+            <Link href={`/modifier-tache/${tache._id}`}>
               Modifier
             </Link>
           </div>

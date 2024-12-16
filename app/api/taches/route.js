@@ -19,6 +19,5 @@ export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectToMongoDB();
   await Tache.findByIdAndDelete(id);
-  await Tache.findByIdAndDelete(id);
   return NextResponse.json({ message: "Tâche est supprimé !" }, { status: 200 });
 }
